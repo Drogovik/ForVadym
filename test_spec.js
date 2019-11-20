@@ -10,3 +10,4 @@ describe("User Registration Page Tests", () => {
             expect(url).toEqual('https://github.com/');     
         });
 	});
+	});
