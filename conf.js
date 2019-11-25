@@ -1,4 +1,3 @@
-
 exports.config = {
   directConnect: true,
   capabilities: {
@@ -10,6 +9,3 @@ exports.config = {
     defaultTimeoutInterval: 30000,
   }
 };
-
-
- 
