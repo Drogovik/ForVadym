@@ -1,5 +1,8 @@
  describe("User Registration Page Tests", () => {
     it("user registration success", () => { 
+	beforeEach(function() {
+      isAngularSite(false);
+    });
 	       browser.waitForAngularEnabled(false);
            browser.get('https://github.com/'); 
 		   
@@ -9,9 +12,9 @@
         element(by.id('submitBtn')).click();
 		
 		    browser.waitForAngularEnabled(true);
-            browser.get('https://google.com/');
+            browser.get('http://localhost:8000');
 		   browser.getCurrentUrl().then((url) => {
-              expect(url).toBe('https://google.com/');
+              expect(url).toBe('http://localhost:8000');
 	});
 	});
  });
